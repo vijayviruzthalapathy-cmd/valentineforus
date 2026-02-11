@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>You are my Valentine ❤️</title>
+
+<style>
+body{
+  text-align:center;
+  font-family:Arial;
+  background:#ffe6f0;
+  margin:0;
+  padding:0;
+}
+button{
+  padding:12px 25px;
+  font-size:18px;
+  margin:10px;
+  border:none;
+  border-radius:20px;
+  cursor:pointer;
+}
+#yes, #yes2{
+  background:#ff4d88;
+  color:white;
+}
+#no, #no2{
+  background:gray;
+  color:white;
+  position:absolute;
+}
+#loveSection, #finalSection{
+  display:none;
+  margin-top:20px;
+}
+p{
+  font-size:18px;
+  max-width:500px;
+  margin:auto;
+}
+.heart{
+  font-size:80px;
+  color:#ff4d88;
+}
+img{
+  width:250px;
+  margin-top:20px;
+  border-radius:15px;
+}
+</style>
+</head>
+<body>
+
+<h1>You are my Valentine ❤️</h1>
+<p>Will you be mine?</p>
+
+<button id="yes" onclick="showLove()">Yes 💕</button>
+<button id="no" onmouseover="moveNo()">No 💔</button>
+
+<!-- Hidden Love Section -->
+<div id="loveSection">
+  <h2>Darling 😍</h2>
+  
+  <!-- Your romantic paragraph -->
+  <p id="para">
+Happy valentine's day Darling 💗 3 years achi love panni niraiya memories niraiya sanda niraiya loves ellamey ungitta mattum dha un kooda indha ulagamey suthi varanum enkooda va veetah vittu veliya va darling ...😩😘 sandhosama irukalam edhu unakaga naaney coding github la ready pannan first kathukitta ipo aprm website kathukitta godaddy la website purchase pannikittan edhella unaku try panna poodhu arvam vandha naala dha unnala dha ellamey naa all clear pannadhu enaku pinnala nee dha iruka ellathulaiyum ipo unnala dha kathukiren ellamey needha miss you di darling 💗😩😘
+  </p>
+
+  <!-- Photo + flirting lines -->
+  <img src="photo.jpg">
+  <h3>Ooo… you look so cute 😍💖</h3>
+  <p>Every time I see you, my heart skips a beat 💗</p>
+  <p>Can't resist smiling when I think of you 😘</p>
+
+  <p>Will you marry me? 💍</p>
+  <button id="yes2" onclick="showLove2()">Yes 💕</button>
+  <button id="no2" onmouseover="moveNo2()">No 💔</button>
+</div>
+
+<!-- Final Kiss / Heart Section -->
+<div id="finalSection">
+  <h2>💋 Just us 💋</h2>
+  <p>Two hearts came together ❤️, kissed under the moonlight 🌙</p>
+  <h1 class="heart">I LOVE YOU LENA DARLING ❤️❤️</h1>
+  <h2>Miss you darling 😘</h2>
+</div>
+
+<script>
+// First No button move
+function moveNo(){
+  let x=Math.random()*300;
+  let y=Math.random()*500;
+  document.getElementById("no").style.left = x+"px";
+  document.getElementById("no").style.top = y+"px";
+}
+
+// First Yes button click → show love section
+function showLove(){
+  document.getElementById("loveSection").style.display = "block";
+  document.getElementById("yes").disabled = true; // prevent double click
+}
+
+// Second No button move
+function moveNo2(){
+  let x=Math.random()*300;
+  let y=Math.random()*500;
+  document.getElementById("no2").style.left = x+"px";
+  document.getElementById("no2").style.top = y+"px";
+}
+
+// Second Yes click → final section
+function showLove2(){
+  document.getElementById("finalSection").style.display = "block";
+  document.getElementById("yes2").disabled = true;
+}
+</script>
+
+</body>
+</html>
+
