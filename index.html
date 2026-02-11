@@ -57,18 +57,22 @@ img{
 <button id="yes" onclick="showLove()">Yes 💕</button>
 <button id="no" onmouseover="moveNo()">No 💔</button>
 
-<!-- Hidden Love Section -->
+<!-- Love Section -->
 <div id="loveSection">
   <h2>Darling 😍</h2>
-  
-  <!-- Your romantic paragraph -->
+
+  <!-- Romantic Paragraph -->
   <p id="para">
 Happy valentine's day Darling 💗 3 years achi love panni niraiya memories niraiya sanda niraiya loves ellamey ungitta mattum dha un kooda indha ulagamey suthi varanum enkooda va veetah vittu veliya va darling ...😩😘 sandhosama irukalam edhu unakaga naaney coding github la ready pannan first kathukitta ipo aprm website kathukitta godaddy la website purchase pannikittan edhella unaku try panna poodhu arvam vandha naala dha unnala dha ellamey naa all clear pannadhu enaku pinnala nee dha iruka ellathulaiyum ipo unnala dha kathukiren ellamey needha miss you di darling 💗😩😘
   </p>
 
-  <!-- Photo + flirting lines -->
-  <img src="photo.jpg">
-  <h3>Ooo… you look so cute 😍💖</h3>
+  <!-- 3 Photos -->
+  <img src="photo1.jpg">
+  <img src="photo2.jpg">
+  <img src="photo3.jpg">
+
+  <!-- Flirting Lines -->
+  <h3>Ooo… you all look so cute 😍💖</h3>
   <p>Every time I see you, my heart skips a beat 💗</p>
   <p>Can't resist smiling when I think of you 😘</p>
 
@@ -77,7 +81,7 @@ Happy valentine's day Darling 💗 3 years achi love panni niraiya memories nira
   <button id="no2" onmouseover="moveNo2()">No 💔</button>
 </div>
 
-<!-- Final Kiss / Heart Section -->
+<!-- Final Heart Section -->
 <div id="finalSection">
   <h2>💋 Just us 💋</h2>
   <p>Two hearts came together ❤️, kissed under the moonlight 🌙</p>
@@ -97,7 +101,7 @@ function moveNo(){
 // First Yes button click → show love section
 function showLove(){
   document.getElementById("loveSection").style.display = "block";
-  document.getElementById("yes").disabled = true; // prevent double click
+  document.getElementById("yes").disabled = true;
 }
 
 // Second No button move
